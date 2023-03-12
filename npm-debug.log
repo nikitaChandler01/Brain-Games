@@ -1,0 +1,75 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'publish', '--dry-run' ]
+2 info using npm@3.5.2
+3 info using node@v8.10.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/mnt/c/Users/ggwpe/frontend-project-44',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /home/nikita270801/.npm/@hexlet/code/1.0.0/package.tgz not in flight; packing
+9 info lifecycle @hexlet/code@1.0.0~prepublish: @hexlet/code@1.0.0
+10 silly lifecycle @hexlet/code@1.0.0~prepublish: no script for prepublish, continuing
+11 verbose tar pack [ '/home/nikita270801/.npm/@hexlet/code/1.0.0/package.tgz',
+11 verbose tar pack   '/mnt/c/Users/ggwpe/frontend-project-44' ]
+12 verbose tarball /home/nikita270801/.npm/@hexlet/code/1.0.0/package.tgz
+13 verbose folder /mnt/c/Users/ggwpe/frontend-project-44
+14 verbose addLocalTarball adding from inside cache /home/nikita270801/.npm/@hexlet/code/1.0.0/package.tgz
+15 silly cache afterAdd @hexlet/code@1.0.0
+16 verbose afterAdd /home/nikita270801/.npm/@hexlet/code/1.0.0/package/package.json not in flight; writing
+17 verbose afterAdd /home/nikita270801/.npm/@hexlet/code/1.0.0/package/package.json written
+18 silly publish { name: '@hexlet/code',
+18 silly publish   version: '1.0.0',
+18 silly publish   type: 'module',
+18 silly publish   description: '[![Actions Status](https://github.com/nikitaChandler01/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/nikitaChandler01/frontend-project-44/actions)',
+18 silly publish   main: 'index.js',
+18 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+18 silly publish   author: '',
+18 silly publish   license: 'ISC',
+18 silly publish   bin: { 'brain-games': 'bin/brain-games.js' },
+18 silly publish   repository:
+18 silly publish    { type: 'git',
+18 silly publish      url: 'git+https://github.com/nikitaChandler01/frontend-project-44.git' },
+18 silly publish   bugs:
+18 silly publish    { url: 'https://github.com/nikitaChandler01/frontend-project-44/issues' },
+18 silly publish   homepage: 'https://github.com/nikitaChandler01/frontend-project-44#readme',
+18 silly publish   readme: '### Hexlet tests and linter status:\r\n[![Actions Status](https://github.com/nikitaChandler01/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/nikitaChandler01/frontend-project-44/actions)',
+18 silly publish   readmeFilename: 'README.md',
+18 silly publish   gitHead: 'bb775531749f181b622049daaebd6920ed710456',
+18 silly publish   _id: '@hexlet/code@1.0.0',
+18 silly publish   _shasum: 'd4ffec46ce9ee8b1592152773bd790107db70918',
+18 silly publish   _from: '.' }
+19 verbose getPublishConfig undefined
+20 silly mapToRegistry name @hexlet/code
+21 silly mapToRegistry scope (from package name) @hexlet
+22 verbose mapToRegistry no registry URL found in name for scope @hexlet
+23 silly mapToRegistry using default registry
+24 silly mapToRegistry registry https://registry.npmjs.org/
+25 silly mapToRegistry uri https://registry.npmjs.org/@hexlet%2fcode
+26 verbose publish registryBase https://registry.npmjs.org/
+27 silly publish uploading /home/nikita270801/.npm/@hexlet/code/1.0.0/package.tgz
+28 verbose stack Error: auth required for publishing
+28 verbose stack     at CachingRegistryClient.publish (/usr/share/npm/node_modules/npm-registry-client/lib/publish.js:30:14)
+28 verbose stack     at /usr/share/npm/lib/publish.js:137:14
+28 verbose stack     at mapToRegistry (/usr/share/npm/lib/utils/map-to-registry.js:55:3)
+28 verbose stack     at publish_ (/usr/share/npm/lib/publish.js:106:3)
+28 verbose stack     at Array.<anonymous> (/usr/share/npm/node_modules/slide/lib/bind-actor.js:15:8)
+28 verbose stack     at LOOP (/usr/share/npm/node_modules/slide/lib/chain.js:15:14)
+28 verbose stack     at LOOP (/usr/share/npm/node_modules/slide/lib/chain.js:14:28)
+28 verbose stack     at chain (/usr/share/npm/node_modules/slide/lib/chain.js:20:5)
+28 verbose stack     at /usr/share/npm/lib/publish.js:72:5
+28 verbose stack     at RES (/usr/share/npm/node_modules/inflight/inflight.js:23:14)
+29 verbose cwd /mnt/c/Users/ggwpe/frontend-project-44
+30 error Linux 5.15.90.1-microsoft-standard-WSL2
+31 error argv "/usr/bin/node" "/usr/bin/npm" "publish" "--dry-run"
+32 error node v8.10.0
+33 error npm  v3.5.2
+34 error code ENEEDAUTH
+35 error need auth auth required for publishing
+36 error need auth You need to authorize this machine using `npm adduser`
+37 verbose exit [ 1, true ]
