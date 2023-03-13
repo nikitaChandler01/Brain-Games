@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
-import checkIsEven from '../brain-answers.js';
+import { checkIsEven } from '../brain-answers.js';
 import getRandomIntNumber from '../brain-randomize.js';
 
 const isEven = (name) => {
