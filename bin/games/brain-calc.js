@@ -16,7 +16,7 @@ const calculate = (name) => {
     if (!checkFunctions[randomOperation](firstRandomNumber, secondRandomNumber, answer)) {
       break;
     }
-    if (userScore === 2) {
+    if (userScore === 3) {
       console.log(`Congratulations, ${name}!`);
     }
   }
