@@ -1,14 +1,14 @@
-#!/usr/bin/env node
+#!usr/bin/env node
 import readlineSync from 'readline-sync';
-import { checkIsEven } from '../brain-answers.js';
 import getRandomIntNumber from '../brain-randomize.js';
+import { checkIsPrime } from '../brain-answers.js';
 
-const isEven = (name) => {
-  console.log('Answer "yes" if the number is even, otherwise answer "no".');
+const isPrime = (name) => {
+  console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
   for (let userScore = 1; userScore < 4; userScore += 1) {
     const randomNumber = getRandomIntNumber(100);
     const answer = readlineSync.question(`Question: ${randomNumber}\nYour answer: `);
-    if (!checkIsEven(randomNumber, answer)) {
+    if (!checkIsPrime(randomNumber, answer)) {
       break;
     }
     if (userScore === 3) {
@@ -17,4 +17,4 @@ const isEven = (name) => {
   }
 };
 
-export default isEven;
+export default isPrime;

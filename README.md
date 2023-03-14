@@ -5,3 +5,4 @@ https://asciinema.org/a/566920 - brain-even
 https://asciinema.org/a/566934 - brain-calc
 https://asciinema.org/a/567032 - brain-cgd
 https://asciinema.org/a/567060 - brain-progression
+https://asciinema.org/a/567158 - brain-prime

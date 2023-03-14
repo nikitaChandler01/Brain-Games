@@ -5,15 +5,17 @@ import isEven from '../bin/games/brain-even.js';
 import calculate from '../bin/games/brain-calc.js';
 import commonDivisior from '../bin/games/brain-cgd.js';
 import defineMissedNumber from '../bin/games/brain-progression.js';
+import isPrime from '../bin/games/brain-prime.js';
 
 const name = userName();
 const brainEven = '>>>>>brain-even';
 const brainCalc = '>>>>>brain-calc';
 const brainCGD = '>>>>>brain-cgd';
 const brainProgression = '>>>>>brain-progression';
+const brainPrime = '>>>>>brain-prime';
 
 const play = () => {
-  const game = readlineSync.question(`What game you want to play? \n${brainEven}\n${brainCalc}\n${brainCGD}\n${brainProgression}\n`);
+  const game = readlineSync.question(`What game you want to play? \n${brainEven}\n${brainCalc}\n${brainCGD}\n${brainProgression}\n${brainPrime}\n`);
   switch (game) {
     case 'brain-even':
       isEven(name);
@@ -31,6 +33,9 @@ const play = () => {
       defineMissedNumber(name);
       break;
 
+    case 'brain-prime':
+      isPrime(name);
+      break;
     default:
       console.log('This game is not exist :(');
   }

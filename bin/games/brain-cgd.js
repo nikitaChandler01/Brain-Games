@@ -8,7 +8,7 @@ const commonDivisior = (name) => {
   for (let userScore = 1; userScore < 4; userScore += 1) {
     const firstRandomNumber = getRandomIntNumber(50) + 9;
     const secondRandomNumber = getRandomIntNumber(50) + 9;
-    const answer = readlineSync.question(`Qestion: ${firstRandomNumber} ${secondRandomNumber} `);
+    const answer = readlineSync.question(`Question: ${firstRandomNumber} ${secondRandomNumber}\nYour answer: `);
     if (Number(answer) === findCommonDivisior(firstRandomNumber, secondRandomNumber)) {
       console.log('Correct!');
     } else {

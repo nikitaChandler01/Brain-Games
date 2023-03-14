@@ -15,6 +15,7 @@
     "brain-calc": "bin/games/brain-calc.js",
     "brain-cgd": "bin/games/brain-cgd.js",
     "brain-progression": "bin/games/brain-progression.js",
+    "brain-prime": "bin/games/brain-prime.js",
     "play": "src/index.js"
   },
   "repository": {

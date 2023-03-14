@@ -17,7 +17,7 @@ const defineMissedNumber = (name) => {
       disturbedProgression = [...finalProgression];
       disturbedProgression[randomNumberOfProgression] = '*';
     }
-    const answer = readlineSync.question(`Question: ${disturbedProgression}\n`);
+    const answer = readlineSync.question(`Question: ${disturbedProgression}\nYour answer: `);
     if (Number(answer) === finalProgression[randomNumberOfProgression]) {
       console.log('Correct!');
     } else {

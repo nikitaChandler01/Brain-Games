@@ -12,7 +12,7 @@ const calculate = (name) => {
     const randomOperation = getRandomIntNumber(3);
     const firstRandomNumber = getRandomIntNumber(100);
     const secondRandomNumber = getRandomIntNumber(100);
-    const answer = readlineSync.question(`Question: ${firstRandomNumber} ${operations[randomOperation]} ${secondRandomNumber}\n`);
+    const answer = readlineSync.question(`Question: ${firstRandomNumber} ${operations[randomOperation]} ${secondRandomNumber}\nYour answer: `);
     if (!checkFunctions[randomOperation](firstRandomNumber, secondRandomNumber, answer)) {
       break;
     }

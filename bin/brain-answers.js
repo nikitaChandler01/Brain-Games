@@ -45,7 +45,20 @@ const findCommonDivisior = (num1, num2) => {
   }
   return i;
 };
+const checkIsPrime = (number, answer) => {
+  const answers = ['yes', 'no'];
+  if (answer === 'no' && (number % 2 === 0 || number % 3 === 0 || number % 5 === 0)) {
+    console.log('Correct!');
+    return true;
+  }
+  if (answer === 'yes' && (number % 2 !== 0 && number % 3 !== 0 && number % 5 !== 0)) {
+    console.log('Correct!');
+    return true;
+  }
+  console.log(`"${answer}" is wrong answer ;(. Correct answer was "${answers.at(answers.indexOf(answer) - 1)}"`);
+  return false;
+};
 
 /* eslint-disable-next-line */
-export { checkCalcSum, checkCalcDif, checkCalcMuliply };
+export { checkCalcSum, checkCalcDif, checkCalcMuliply, checkIsPrime };
 export { findCommonDivisior, checkIsEven };
