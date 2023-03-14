@@ -1,7 +1,7 @@
 const checkIsEven = (number, answer) => {
   const answers = ['yes', 'no'];
   if (number % 2 !== answers.indexOf(answer)) { /* 'yes' лежит под нулевым индексом */
-    console.log(`"${answer}" is wrong answer ;(. Correct answer was "${answers.at(answers.indexOf(answer) - 1)}"`);
+    console.log(`"${answer}" is wrong answer ;(. Correct answer was "${answers.at(answers.indexOf(answer) - 1)}".`);
     return false;
   }
   console.log('Correct!');
@@ -9,7 +9,7 @@ const checkIsEven = (number, answer) => {
 };
 const checkCalcSum = (num1, num2, answer) => {
   if (num1 + num2 !== Number(answer)) {
-    console.log(`"${answer}" is wrong answer ;(. Correct answer was "${num1 + num2}"`);
+    console.log(`"${answer}" is wrong answer ;(. Correct answer was "${num1 + num2}".`);
     return false;
   }
   console.log('Correct!');
@@ -17,7 +17,7 @@ const checkCalcSum = (num1, num2, answer) => {
 };
 const checkCalcDif = (num1, num2, answer) => {
   if (num1 - num2 !== Number(answer)) {
-    console.log(`"${answer}" is wrong answer ;(. Correct answer was "${num1 - num2}"`);
+    console.log(`"${answer}" is wrong answer ;(. Correct answer was "${num1 - num2}".`);
     return false;
   }
   console.log('Correct!');
@@ -25,7 +25,7 @@ const checkCalcDif = (num1, num2, answer) => {
 };
 const checkCalcMuliply = (num1, num2, answer) => {
   if (num1 * num2 !== Number(answer)) {
-    console.log(`"${answer}" is wrong answer ;(. Correct answer was "${num1 * num2}"`);
+    console.log(`"${answer}" is wrong answer ;(. Correct answer was "${num1 * num2}".`);
     return false;
   }
   console.log('Correct!');
@@ -71,7 +71,7 @@ const checkIsPrime = (number, answer) => {
     console.log('Correct!');
     return true;
   }
-  console.log(`"${answer}" is wrong answer ;(. Correct answer was "${answers.at(answers.indexOf(answer) - 1)}"`);
+  console.log(`"${answer}" is wrong answer ;(. Correct answer was "${answers.at(answers.indexOf(answer) - 1)}".`);
   return false;
 };
 
