@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
-import getRandomIntNumber from '../brain-randomize.js';
+import getRandomIntNumber from './brain-randomize.js';
 
 const defineMissedNumber = (name) => {
   console.log('What number is missing in the progression?');

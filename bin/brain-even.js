@@ -1,9 +1,11 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
-import { checkIsEven } from '../brain-answers.js';
-import getRandomIntNumber from '../brain-randomize.js';
+import { checkIsEven } from './brain-answers.js';
+import getRandomIntNumber from './brain-randomize.js';
+import userName from './brain-meeting.js';
 
-const isEven = (name) => {
+const name = userName();
+const isEven = () => {
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
   for (let userScore = 1; userScore < 4; userScore += 1) {
     const randomNumber = getRandomIntNumber(100);
@@ -16,5 +18,5 @@ const isEven = (name) => {
     }
   }
 };
-
+isEven(name);
 export default isEven;

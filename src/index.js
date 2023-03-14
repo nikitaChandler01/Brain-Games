@@ -1,11 +1,11 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
 import userName from '../bin/brain-meeting.js';
-import isEven from '../bin/games/brain-even.js';
-import calculate from '../bin/games/brain-calc.js';
-import commonDivisior from '../bin/games/brain-cgd.js';
-import defineMissedNumber from '../bin/games/brain-progression.js';
-import isPrime from '../bin/games/brain-prime.js';
+import isEven from '../bin/brain-even.js';
+import calculate from '../bin/brain-calc.js';
+import commonDivisior from '../bin/brain-cgd.js';
+import defineMissedNumber from '../bin/brain-progression.js';
+import isPrime from '../bin/brain-prime.js';
 
 const name = userName();
 const brainEven = '>>>>>brain-even';

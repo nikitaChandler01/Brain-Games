@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
-import { checkCalcSum, checkCalcDif, checkCalcMuliply } from '../brain-answers.js';
-import getRandomIntNumber from '../brain-randomize.js';
+import { checkCalcSum, checkCalcDif, checkCalcMuliply } from './brain-answers.js';
+import getRandomIntNumber from './brain-randomize.js';
 
 const calculate = (name) => {
   console.log('What is the result of the expression?');
