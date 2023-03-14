@@ -46,12 +46,28 @@ const findCommonDivisior = (num1, num2) => {
   return i;
 };
 const checkIsPrime = (number, answer) => {
+  const findingDivisiors = (num) => {
+    if (num === 0) return true;
+    if (num <= 2) return false;
+    let i = 2;
+    while (i < num) {
+      if (num % i === 0) {
+        return true;
+      }
+      i += 1;
+    }
+    return false;
+  };
   const answers = ['yes', 'no'];
-  if (answer === 'no' && (number % 2 === 0 || number % 3 === 0 || number % 5 === 0)) {
+  if (answer === 'yes' && number <= 2) {
     console.log('Correct!');
     return true;
   }
-  if (answer === 'yes' && (number % 2 !== 0 && number % 3 !== 0 && number % 5 !== 0)) {
+  if (answer === 'yes' && !findingDivisiors(number)) {
+    console.log('Correct!');
+    return true;
+  }
+  if (answer === 'no' && findingDivisiors(number)) {
     console.log('Correct!');
     return true;
   }

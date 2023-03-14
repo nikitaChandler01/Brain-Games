@@ -2,8 +2,10 @@
 import readlineSync from 'readline-sync';
 import { checkCalcSum, checkCalcDif, checkCalcMuliply } from './brain-answers.js';
 import getRandomIntNumber from './brain-randomize.js';
+import userName from './brain-meeting.js';
 
-const calculate = (name) => {
+const name = userName();
+const calculate = () => {
   console.log('What is the result of the expression?');
   const operations = ['+', '-', '*'];
   const checkFunctions = [checkCalcSum, checkCalcDif, checkCalcMuliply];
@@ -14,6 +16,7 @@ const calculate = (name) => {
     const secondRandomNumber = getRandomIntNumber(100);
     const answer = readlineSync.question(`Question: ${firstRandomNumber} ${operations[randomOperation]} ${secondRandomNumber}\nYour answer: `);
     if (!checkFunctions[randomOperation](firstRandomNumber, secondRandomNumber, answer)) {
+      console.log(`Let's try again, ${name}!`);
       break;
     }
     if (userScore === 3) {
@@ -22,4 +25,4 @@ const calculate = (name) => {
   }
 };
 
-export default calculate;
+calculate(name);

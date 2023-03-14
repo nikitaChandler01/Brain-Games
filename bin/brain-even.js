@@ -20,4 +20,3 @@ const isEven = () => {
   }
 };
 isEven(name);
-export default isEven;
