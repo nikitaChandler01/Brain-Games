@@ -9,10 +9,9 @@ const isEven = () => {
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
   for (let userScore = 1; userScore < 4; userScore += 1) {
     const randomNumber = getRandomIntNumber(100);
-    const answer = readlineSync.question(`Question: ${randomNumber}\nYour answer: \n`);
+    const answer = readlineSync.question(`Question: ${randomNumber}\nYour answer: `);
     if (!checkIsEven(randomNumber, answer)) {
-      console.log(`Let's try again, ${name}\n`);
-      isEven(name);
+      console.log(`Let's try again, ${name}!`);
       break;
     }
     if (userScore === 3) {
