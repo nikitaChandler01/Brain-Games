@@ -1,14 +1,24 @@
-import readlineSync from 'readline-sync';
-import { checkIsPrime } from '../brain-answers.js';
-import getRandomIntNumber from '../brain-randomize.js';
+import runGame from '../index.js';
+import getRandomNumber from '../utils.js';
 
-const isPrime = () => {
-  const randomNumber = getRandomIntNumber(100);
-  const answer = readlineSync.question(`Question: ${randomNumber}\nYour answer: `);
-  if (!checkIsPrime(randomNumber, answer)) {
-    return false;
+const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+const checkIsPrime = (number) => {
+  if (number === 0) return 'yes';
+  if (number <= 2) return 'yes';
+  let i = 2;
+  while (i < number) {
+    if (number % i === 0) {
+      return 'no';
+    }
+    i += 1;
   }
-  return true;
+  return 'yes';
+};
+const getQuestionAndAnswer = () => {
+  const randomNumber = getRandomNumber(0, 100);
+  const question = `${randomNumber}`;
+  const correctAnswer = checkIsPrime(randomNumber);
+  return [question, correctAnswer];
 };
 
-export default isPrime;
+export default () => { runGame(description, getQuestionAndAnswer); };

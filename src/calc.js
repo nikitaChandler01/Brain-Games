@@ -1,5 +1,5 @@
-import runGame from '../test.js';
-import getRandomNumber from '../utils.js';
+import runGame from './test.js';
+import getRandomNumber from './utils.js';
 
 const operationSymbols = ['+', '-', '*'];
 const description = 'What is the result of the expression?';

@@ -1,12 +1,16 @@
-import readlineSync from 'readline-sync';
-import { checkIsEven } from '../brain-answers.js';
-import getRandomIntNumber from '../brain-randomize.js';
+import runGame from '../test.js';
+import getRandomNumber from '../utils.js';
 
-const isEven = () => {
-  const randomNumber = getRandomIntNumber(100);
-  const answer = readlineSync.question(`Question: ${randomNumber}\nYour answer: `);
-  if (checkIsEven(randomNumber, answer)) return true;
-  return false;
+const checkIsEven = (number) => {
+  if (number % 2 === 0) return 'yes';
+  return 'no';
+};
+const description = 'Answer "yes" if the number is even, otherwise answer "no".';
+const getQuestionAndAnswer = () => {
+  const randomNumber = getRandomNumber(0, 100);
+  const question = `${randomNumber}`;
+  const correctAnswer = checkIsEven(randomNumber);
+  return [question, correctAnswer];
 };
 
-export default isEven;
+export default () => { runGame(description, getQuestionAndAnswer); };
