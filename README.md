@@ -54,3 +54,5 @@ Just write `brain-prime` in your shell to play!
 You get random number. Your task is to determine if this number is prime or not.
 Just write `brain-prime` in your shell to play!
 [![asciicast](https://asciinema.org/a/r0dfmIyVybysMxvwxG0qxecm4.svg)](https://asciinema.org/a/r0dfmIyVybysMxvwxG0qxecm4)
+
+[![hexlet-check](https://github.com/nikitaChandler01/Brain-Games/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/nikitaChandler01/Brain-Games/actions/workflows/hexlet-check.yml)
